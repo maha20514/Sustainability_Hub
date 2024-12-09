@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 // components/ChallengeCard.tsx
 "use client"
 import { FC } from "react";

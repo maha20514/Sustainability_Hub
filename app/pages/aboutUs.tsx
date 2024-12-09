@@ -19,9 +19,9 @@ const AboutUs = () => {
           fulfilling, sustainable lives. Join us on our journey toward a sustainable tomorrow.
         </p>
       </div>
-      <div className={styles.aboutImage}>
-        <img src="/images/sustainability-image.jpg" alt="Sustainability Image" />
-      </div>
+     {/*  <div className={styles.aboutImage}>
+        <img src="/" alt="Sustainability Image" />
+      </div> */}
     </section>
   );
 };
