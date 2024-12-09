@@ -1,0 +1,65 @@
+/* styles/aboutus.module.css */
+
+/* General container styles */
+.aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .aboutText {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .aboutText h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c6f6d;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .aboutImage {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .aboutImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .aboutContainer {
+      flex-direction: column;
+    }
+  
+    .aboutText {
+      max-width: 100%;
+    }
+  
+    .aboutImage {
+      margin-top: 20px;
+    }
+  }
+  

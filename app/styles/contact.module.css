@@ -1,0 +1,38 @@
+/* styles/contact.module.css */
+
+/* Section container */
+.contactIntro {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactIntro h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contactIntro p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .contactIntro {
+    padding: 20px;
+  }
+
+  .contactIntro h1 {
+    font-size: 1.8rem;
+  }
+
+  .contactIntro p {
+    font-size: 1rem;
+  }
+}

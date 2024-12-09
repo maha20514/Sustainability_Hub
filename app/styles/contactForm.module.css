@@ -1,0 +1,104 @@
+
+/* Container for the form */
+.contactFormContainer {
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 600px;
+  margin: 30px auto ;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Title of the form */
+.contactFormContainer h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* General form styling */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Labels for form fields */
+.contactForm label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Input fields styling */
+.contactForm input,
+.contactForm textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Input and textarea focus effect */
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #4CAF50;
+}
+
+/* Submit button styling */
+.submitBtn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the submit button */
+.submitBtn:hover {
+  background-color: #45a049;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .contactFormContainer {
+    padding: 20px;
+  }
+
+  .contactForm label {
+    font-size: 0.9rem;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    font-size: 1rem;
+  }
+
+  .submitBtn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactFormContainer {
+    padding: 15px;
+  }
+
+  .contactFormContainer h2 {
+    font-size: 1.8rem;
+  }
+
+  .submitBtn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}

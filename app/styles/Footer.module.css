@@ -1,0 +1,55 @@
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(90deg, #34495e, #2c3e50);
+  color: #dfe6e9;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 3px solid #e67e22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Ensures footer is on top of other content */
+}
+
+/* Add padding at the bottom of the content to prevent it from being covered */
+.main-content {
+  padding-bottom: 4rem; /* This should be equal to or more than the height of your footer */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.link {
+  color: #e67e22;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #fdfdfd;
+  text-decoration: underline;
+}
