@@ -1,7 +1,7 @@
 import { Webhook } from 'svix';
 import { headers } from 'next/headers';
 import { WebhookEvent } from '@clerk/nextjs/server';
-import { createUser, updateUser, deleteUser } from '@/lib/actions/user.action';
+import { createUser} from '@/lib/actions/user.action';
 import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {
@@ -64,7 +64,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ message: 'OK', user: mongoUser });
   }
 
-  if (eventType === 'user.updated') {
+  /* if (eventType === 'user.updated') {
     const { id, email_addresses, image_url, username, first_name, last_name } = evt.data;
 
     // Update the user in MongoDB
@@ -80,9 +80,9 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ message: 'OK', user: mongoUser });
-  }
+  } */
 
-  if (eventType === 'user.deleted') {
+  /* if (eventType === 'user.deleted') {
     const { id } = evt.data;
 
     // Delete the user from MongoDB
@@ -91,7 +91,7 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ message: 'OK', user: deletedUser });
-  }
+  } */
 
   return NextResponse.json({ message: 'OK' });
 }
